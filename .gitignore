@@ -1,0 +1,24 @@
+# Build files
+target/
+*.class
+*.war
+*.jar
+
+# IDE files
+.vscode/
+.idea/
+
+# Eclipse files
+.settings/
+.project
+.classpath
+
+# Local database config
+db.local.properties
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
