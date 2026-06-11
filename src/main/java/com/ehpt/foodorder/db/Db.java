@@ -51,6 +51,9 @@ public final class Db {
             ")"
         );
         st.executeUpdate(
+    "INSERT IGNORE INTO admin_users(username,password) VALUES('admin','admin123')"
+);
+        st.executeUpdate(
             "CREATE TABLE IF NOT EXISTS food_items (" +
                 "id INT PRIMARY KEY AUTO_INCREMENT," +
                 "name VARCHAR(120) NOT NULL," +
