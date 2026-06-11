@@ -10,12 +10,25 @@ public final class Db {
   private static volatile boolean schemaReady = false;
 
   private Db() {}
+ static {
+    try {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        System.out.println("MYSQL DRIVER LOADED SUCCESSFULLY");
+    } catch (ClassNotFoundException e) {
+        System.out.println("MYSQL DRIVER FAILED");
+        e.printStackTrace();
+        throw new RuntimeException(e);
+    }
+}
 
   public static Connection getConnection() throws SQLException {
+    System.out.println("DB URL = " + CFG.url);
+    System.out.println("DB USER = " + CFG.username);
+
     Connection c = DriverManager.getConnection(CFG.url, CFG.username, CFG.password);
     ensureSchema(c);
     return c;
-  }
+}
 
   private static void ensureSchema(Connection c) throws SQLException {
     if (schemaReady) return;
