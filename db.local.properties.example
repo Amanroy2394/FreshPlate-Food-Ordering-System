@@ -1,0 +1,6 @@
+# Copy this file to db.local.properties in the SAME folder as pom.xml.
+# db.local.properties overrides classpath db.properties — no full rebuild needed; restart Jetty/Tomcat.
+#
+# jdbc.url=jdbc:mysql://localhost:3306/ehpt_food?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+# jdbc.username=root
+jdbc.password=PUT_YOUR_MYSQL_PASSWORD_HERE
