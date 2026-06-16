@@ -323,6 +323,7 @@ Aspiring Java Full Stack Developer
 
 GitHub:
 https://github.com/Amanroy2394
+Live Url: https://freshplate-food-ordering-system-production.up.railway.app/
 
 LinkedIn:
 www.linkedin.com/in/aman-kumar-choudhary-37b9b22b0
